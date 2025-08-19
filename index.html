@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Personal Website</title>
+    <title>Nicholas Kamp - Physicist & Musician</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
@@ -11,11 +11,11 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <div class="nav-logo">Your Name</div>
+            <div class="nav-logo">Nicholas Kamp</div>
             <div class="nav-menu">
                 <a href="#home" class="nav-link">Home</a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#physics" class="nav-link">Physics</a>
+                <a href="#music" class="nav-link">Music</a>
                 <a href="#contact" class="nav-link">Contact</a>
             </div>
             <div class="hamburger">
@@ -29,82 +29,207 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1>Hello, I'm <span class="highlight">Your Name</span></h1>
-            <p class="hero-description">Web Developer | Software Engineer | Problem Solver</p>
+            <h1>Hello, I'm <span class="highlight">Nicholas Kamp</span></h1>
+            <p class="hero-description">Postdoctoral Fellow in Physics | Neutrino Researcher | Musician</p>
+            <p class="hero-subtitle">Exploring the mysteries of the universe through physics and expressing creativity through music</p>
             <div class="hero-buttons">
-                <a href="#projects" class="btn btn-primary">View My Work</a>
-                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                <a href="#physics" class="btn btn-primary">View My Research</a>
+                <a href="#music" class="btn btn-secondary">Listen to My Music</a>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
+    <!-- Physics Section -->
+    <section id="physics" class="physics">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>I'm a passionate developer with experience in creating web applications and solving complex problems. I love learning new technologies and building projects that make a difference.</p>
-                    <p>When I'm not coding, you can find me exploring new technologies, reading tech blogs, or working on personal projects.</p>
+            <h2 class="section-title">Physics Research</h2>
+
+            <!-- Current Position -->
+            <div class="position-card current">
+                <div class="position-header">
+                    <h3>Current Position</h3>
+                    <span class="position-date">2023 - Present</span>
                 </div>
-                <div class="skills">
-                    <h3>Skills</h3>
-                    <div class="skill-grid">
-                        <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">React</span>
-                        <span class="skill-tag">Node.js</span>
-                        <span class="skill-tag">HTML/CSS</span>
-                        <span class="skill-tag">Git</span>
+                <h4>Postdoctoral Fellow in Physics</h4>
+                <p class="institution">Harvard University, Cambridge, MA</p>
+                <p class="advisor">Advisor: Prof. Carlos Argüelles-Delgado</p>
+                <p class="description">Conducting cutting-edge research in neutrino physics, focusing on high-energy neutrino interactions and beyond-standard-model physics.</p>
+            </div>
+
+            <!-- Research Areas -->
+            <div class="research-areas">
+                <h3>Research Focus</h3>
+                <div class="research-grid">
+                    <div class="research-card">
+                        <div class="research-icon">
+                            <i class="fas fa-atom"></i>
+                        </div>
+                        <h4>Neutrino Physics</h4>
+                        <p>Investigating neutrino oscillations, sterile neutrino searches, and the MiniBooNE anomaly</p>
                     </div>
+                    <div class="research-card">
+                        <div class="research-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h4>Machine Learning in Physics</h4>
+                        <p>Developing deep learning techniques for shower energy reconstruction and event classification</p>
+                    </div>
+                    <div class="research-card">
+                        <div class="research-icon">
+                            <i class="fas fa-telescope"></i>
+                        </div>
+                        <h4>Neutrino Telescopes</h4>
+                        <p>Working on ultra-high-energy neutrino detection and analysis with KM3NeT collaboration</p>
+                    </div>
+                    <div class="research-card">
+                        <div class="research-icon">
+                            <i class="fas fa-microscope"></i>
+                        </div>
+                        <h4>Beyond Standard Model</h4>
+                        <p>Exploring new physics through neutrino-nucleus interactions and dark matter searches</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Education & Career -->
+            <div class="timeline">
+                <h3>Education & Career</h3>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h4>Ph.D. in Physics</h4>
+                        <p class="institution">Massachusetts Institute of Technology (2019-2023)</p>
+                        <p class="thesis">Thesis: "Experimental and Phenomenological Investigations of the MiniBooNE Excess"</p>
+                        <p class="advisor">Advisor: Prof. Janet Conrad</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h4>B.S.E. Engineering Physics with Honors</h4>
+                        <p class="institution">University of Michigan, Ann Arbor (2015-2019)</p>
+                        <p class="details">Summa Cum Laude | Minors: Math, Music</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Awards & Recognition -->
+            <div class="awards-section">
+                <h3>Awards & Recognition</h3>
+                <div class="awards-grid">
+                    <div class="award-item">
+                        <div class="award-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <div class="award-content">
+                            <h4>Session 6 Best Talk</h4>
+                            <p>New Perspectives 2024</p>
+                        </div>
+                    </div>
+                    <div class="award-item">
+                        <div class="award-icon">
+                            <i class="fas fa-medal"></i>
+                        </div>
+                        <div class="award-content">
+                            <h4>NSF Graduate Research Fellow</h4>
+                            <p>2020-2023</p>
+                        </div>
+                    </div>
+                    <div class="award-item">
+                        <div class="award-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="award-content">
+                            <h4>Los Alamos National Lab SPOT Award</h4>
+                            <p>Summer 2018</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Publications -->
+            <div class="publications">
+                <h3>Recent Publications</h3>
+                <div class="publication-list">
+                    <div class="publication-item">
+                        <h4>"The ultra-high-energy event KM3-230213A within the global neutrino landscape"</h4>
+                        <p class="authors">O. Adriani et al.</p>
+                        <p class="journal">arXiv:2502.08173 (Feb. 2025) - 16 Citations</p>
+                    </div>
+                    <div class="publication-item">
+                        <h4>"Lake- and Surface-Based Detectors for Forward Neutrino Physics"</h4>
+                        <p class="authors">Nicholas W. Kamp et al.</p>
+                        <p class="journal">arXiv:2501.08278 (Jan. 2025) - 2 Citations</p>
+                    </div>
+                    <div class="publication-item">
+                        <h4>"Enhancing events in neutrino telescopes through deep-learning-driven super-resolution"</h4>
+                        <p class="authors">Felix J. Yu, Nicholas Kamp, and Carlos A. Argüelles</p>
+                        <p class="journal">Phys. Rev. D 111.4 (2025)</p>
+                    </div>
+                </div>
+                <div class="inspire-link">
+                    <a href="#" class="btn btn-outline">View Full Publication List on INSPIRE</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
+    <!-- Music Section -->
+    <section id="music" class="music">
         <div class="container">
-            <h2 class="section-title">My Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <i class="fas fa-code"></i>
+            <h2 class="section-title">Music</h2>
+
+            <div class="music-intro">
+                <p>Beyond the world of physics, I find creative expression through music. My musical journey began alongside my academic pursuits, earning a minor in Music from the University of Michigan. Music provides a different lens through which to explore patterns, harmonies, and the beauty of structured creativity.</p>
+            </div>
+
+            <div class="music-content">
+                <div class="music-description">
+                    <h3>Musical Journey</h3>
+                    <p>Music has been a constant companion throughout my academic and research career. Just as physics seeks to understand the fundamental patterns that govern our universe, music explores the patterns and relationships that create harmony and emotional resonance.</p>
+                    <p>The analytical thinking required for physics research often informs my approach to composition and sound design, while the creative processes in music provide fresh perspectives for tackling complex research problems.</p>
+                </div>
+
+                <div class="soundcloud-section">
+                    <h3>Listen to My Music</h3>
+                    <p>Explore my musical creations on SoundCloud, where I share original compositions and experimental pieces.</p>
+
+                    <div class="soundcloud-embed">
+                        <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay"
+                                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/684860444&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
+                        </iframe>
                     </div>
-                    <div class="project-content">
-                        <h3>Project One</h3>
-                        <p>Description of your first project. What technologies you used and what problem it solves.</p>
-                        <div class="project-links">
-                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
-                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                        </div>
+
+                    <div class="music-links">
+                        <a href="https://soundcloud.com/kamp-684860444" target="_blank" class="btn btn-primary">
+                            <i class="fab fa-soundcloud"></i> Visit My SoundCloud
+                        </a>
                     </div>
                 </div>
 
-                <div class="project-card">
-                    <div class="project-image">
-                        <i class="fas fa-mobile-alt"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3>Project Two</h3>
-                        <p>Description of your second project. Highlight the key features and technologies used.</p>
-                        <div class="project-links">
-                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
-                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                <div class="music-physics-connection">
+                    <h3>The Physics-Music Connection</h3>
+                    <div class="connection-grid">
+                        <div class="connection-item">
+                            <div class="connection-icon">
+                                <i class="fas fa-wave-square"></i>
+                            </div>
+                            <h4>Wave Physics</h4>
+                            <p>Understanding acoustics and wave interference patterns informs both my research and musical composition</p>
                         </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <i class="fas fa-database"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3>Project Three</h3>
-                        <p>Description of your third project. Explain what makes this project special.</p>
-                        <div class="project-links">
-                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
-                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        <div class="connection-item">
+                            <div class="connection-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h4>Pattern Recognition</h4>
+                            <p>The same analytical skills used in data analysis help in understanding musical structures and progressions</p>
+                        </div>
+                        <div class="connection-item">
+                            <div class="connection-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <h4>Creative Problem Solving</h4>
+                            <p>Musical improvisation and composition enhance creative thinking approaches to physics research</p>
                         </div>
                     </div>
                 </div>
@@ -116,19 +241,23 @@
     <section id="contact" class="contact">
         <div class="container">
             <h2 class="section-title">Get In Touch</h2>
-            <p class="contact-description">I'm always open to discussing new opportunities and interesting projects.</p>
+            <p class="contact-description">I'm always open to discussing physics research, collaborations, music, or interesting projects that bridge science and creativity.</p>
             <div class="contact-links">
-                <a href="mailto:your.email@example.com" class="contact-link">
+                <a href="mailto:nkamp@fas.harvard.edu" class="contact-link">
                     <i class="fas fa-envelope"></i>
-                    <span>your.email@example.com</span>
+                    <span>nkamp@fas.harvard.edu</span>
                 </a>
-                <a href="https://linkedin.com/in/yourprofile" class="contact-link">
-                    <i class="fab fa-linkedin"></i>
-                    <span>LinkedIn</span>
+                <a href="https://soundcloud.com/kamp-684860444" target="_blank" class="contact-link">
+                    <i class="fab fa-soundcloud"></i>
+                    <span>SoundCloud</span>
                 </a>
-                <a href="https://github.com/yourusername" class="contact-link">
-                    <i class="fab fa-github"></i>
-                    <span>GitHub</span>
+                <a href="#" class="contact-link">
+                    <i class="fas fa-university"></i>
+                    <span>Harvard Physics</span>
+                </a>
+                <a href="#" class="contact-link">
+                    <i class="fab fa-orcid"></i>
+                    <span>INSPIRE Profile</span>
                 </a>
             </div>
         </div>
@@ -137,7 +266,8 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 Your Name. All rights reserved.</p>
+            <p>&copy; 2024 Nicholas Kamp. All rights reserved.</p>
+            <p>Postdoctoral Fellow in Physics, Harvard University | Musician & Creative Explorer</p>
         </div>
     </footer>
 

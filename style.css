@@ -55,7 +55,7 @@ body {
     transition: color 0.3s ease;
 }
 
-.nav-link:hover {
+.nav-link:hover, .nav-link.active {
     color: #3498db;
 }
 
@@ -95,8 +95,15 @@ body {
 
 .hero-description {
     font-size: 1.2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     opacity: 0.9;
+}
+
+.hero-subtitle {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    opacity: 0.8;
+    font-style: italic;
 }
 
 .hero-buttons {
@@ -112,7 +119,9 @@ body {
     border-radius: 5px;
     font-weight: 600;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .btn-primary {
@@ -124,6 +133,12 @@ body {
     background-color: transparent;
     color: white;
     border: 2px solid white;
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: #3498db;
+    border: 2px solid #3498db;
 }
 
 .btn:hover {
@@ -139,37 +154,39 @@ body {
     color: #2c3e50;
 }
 
-/* About Section */
-.about {
+/* Physics Section */
+.physics {
     padding: 100px 0;
     background-color: #f8f9fa;
 }
 
-.about-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
-    align-items: start;
+.position-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 3rem;
 }
 
-.about-text p {
-    margin-bottom: 1rem;
-    color: #666;
-    line-height: 1.8;
+.position-card.current {
+    border-left: 5px solid #3498db;
 }
 
-.skills h3 {
-    margin-bottom: 1rem;
-    color: #2c3e50;
-}
-
-.skill-grid {
+.position-header {
     display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
 }
 
-.skill-tag {
+.position-header h3 {
+    color: #3498db;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.position-date {
     background-color: #3498db;
     color: white;
     padding: 5px 15px;
@@ -177,65 +194,278 @@ body {
     font-size: 0.9rem;
 }
 
-/* Projects Section */
-.projects {
-    padding: 100px 0;
+.position-card h4 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
 }
 
-.projects-grid {
+.institution {
+    font-weight: 600;
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+.advisor {
+    color: #888;
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+.description {
+    color: #666;
+    line-height: 1.7;
+}
+
+.research-areas, .timeline, .awards-section, .publications {
+    margin: 4rem 0;
+}
+
+.research-areas h3, .timeline h3, .awards-section h3, .publications h3 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #2c3e50;
+    text-align: center;
+}
+
+.research-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.research-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.research-card:hover {
+    transform: translateY(-5px);
+}
+
+.research-icon {
+    margin-bottom: 1rem;
+}
+
+.research-icon i {
+    font-size: 2.5rem;
+    color: #3498db;
+}
+
+.research-card h4 {
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
+
+.research-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Timeline */
+.timeline-item {
+    display: flex;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.timeline-marker {
+    width: 20px;
+    height: 20px;
+    background-color: #3498db;
+    border-radius: 50%;
+    margin-right: 2rem;
+    margin-top: 0.2rem;
+    flex-shrink: 0;
+}
+
+.timeline-content h4 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.thesis {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+.details {
+    color: #888;
+}
+
+/* Awards */
+.awards-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
 }
 
-.project-card {
-    background: white;
-    border-radius: 10px;
-    padding: 2rem;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
-}
-
-.project-image {
-    text-align: center;
-    margin-bottom: 1rem;
-}
-
-.project-image i {
-    font-size: 3rem;
-    color: #3498db;
-}
-
-.project-content h3 {
-    margin-bottom: 1rem;
-    color: #2c3e50;
-}
-
-.project-content p {
-    color: #666;
-    margin-bottom: 1.5rem;
-    line-height: 1.6;
-}
-
-.project-links {
+.award-item {
     display: flex;
-    gap: 1rem;
+    align-items: center;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-.project-link {
-    text-decoration: none;
-    color: #3498db;
-    font-weight: 500;
-    transition: color 0.3s ease;
+.award-icon {
+    margin-right: 1rem;
 }
 
-.project-link:hover {
-    color: #2980b9;
+.award-icon i {
+    font-size: 2rem;
+    color: #f39c12;
+}
+
+.award-content h4 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.award-content p {
+    color: #666;
+}
+
+/* Publications */
+.publication-list {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.publication-item {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+}
+
+.publication-item h4 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+}
+
+.authors {
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+.journal {
+    color: #888;
+    font-size: 0.9rem;
+}
+
+.inspire-link {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/* Music Section */
+.music {
+    padding: 100px 0;
+    background: white;
+}
+
+.music-intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 4rem;
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.8;
+}
+
+.music-content {
+    display: grid;
+    gap: 4rem;
+}
+
+.music-description h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.music-description p {
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+}
+
+.soundcloud-section {
+    background: #f8f9fa;
+    padding: 3rem;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.soundcloud-section h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.soundcloud-section > p {
+    color: #666;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+.soundcloud-embed {
+    margin: 2rem 0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.music-links {
+    margin-top: 2rem;
+}
+
+.music-physics-connection h3 {
+    color: #2c3e50;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.connection-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.connection-item {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.connection-icon {
+    margin-bottom: 1rem;
+}
+
+.connection-icon i {
+    font-size: 2.5rem;
+    color: #e74c3c;
+}
+
+.connection-item h4 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.connection-item p {
+    color: #666;
+    line-height: 1.6;
 }
 
 /* Contact Section */
@@ -249,6 +479,10 @@ body {
     font-size: 1.1rem;
     margin-bottom: 2rem;
     color: #666;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.7;
 }
 
 .contact-links {
@@ -266,10 +500,16 @@ body {
     color: #333;
     font-weight: 500;
     transition: color 0.3s ease;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .contact-link:hover {
     color: #3498db;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
 }
 
 .contact-link i {
@@ -284,33 +524,63 @@ body {
     padding: 2rem 0;
 }
 
+.footer p {
+    margin-bottom: 0.5rem;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .hamburger {
         display: flex;
     }
-    
+
     .nav-menu {
         display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: white;
+        flex-direction: column;
+        padding: 1rem;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     }
-    
+
+    .nav-menu.active {
+        display: flex;
+    }
+
     .hero-content h1 {
         font-size: 2.5rem;
     }
-    
+
     .hero-buttons {
         flex-direction: column;
         align-items: center;
     }
-    
-    .about-content {
-        grid-template-columns: 1fr;
-        gap: 2rem;
+
+    .position-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
     }
-    
+
+    .timeline-item {
+        flex-direction: column;
+    }
+
+    .timeline-marker {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
     .contact-links {
         flex-direction: column;
         align-items: center;
+    }
+
+    .soundcloud-section {
+        padding: 2rem 1rem;
     }
 }
 
@@ -318,12 +588,16 @@ body {
     .hero-content h1 {
         font-size: 2rem;
     }
-    
+
     .section-title {
         font-size: 2rem;
     }
-    
-    .project-card {
+
+    .position-card, .research-card, .award-item, .publication-item {
         padding: 1.5rem;
+    }
+
+    .music-intro {
+        font-size: 1rem;
     }
 }
