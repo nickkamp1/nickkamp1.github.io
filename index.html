@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nicholas Kamp - Physicist & Musician</title>
+    <title>Nick Kamp - Physicist & Musician</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
@@ -11,7 +11,7 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <div class="nav-logo">Nicholas Kamp</div>
+            <div class="nav-logo">Nick Kamp</div>
             <div class="nav-menu">
                 <a href="#home" class="nav-link">Home</a>
                 <a href="#physics" class="nav-link">Physics</a>
@@ -29,9 +29,11 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1>Hello, I'm <span class="highlight">Nicholas Kamp</span></h1>
-            <p class="hero-description">Postdoctoral Fellow in Physics | Neutrino Researcher | Musician</p>
-            <p class="hero-subtitle">Exploring the mysteries of the universe through physics and expressing creativity through music</p>
+            <div class="hero-image">
+                <img src="images/headshot.png" alt="Nick Kamp" class="headshot">
+            </div>
+            <h1>Hello, I'm <span class="highlight">Nick Kamp</span></h1>
+            <p class="hero-description">Neutrino Physics Postdoc @ Harvard | Musician</p>
             <div class="hero-buttons">
                 <a href="#physics" class="btn btn-primary">View My Research</a>
                 <a href="#music" class="btn btn-secondary">Listen to My Music</a>
@@ -64,8 +66,64 @@
                         <div class="research-icon">
                             <i class="fas fa-atom"></i>
                         </div>
-                        <h4>Neutrino Physics</h4>
-                        <p>Investigating neutrino oscillations, sterile neutrino searches, and the MiniBooNE anomaly</p>
+                        <h4>Resolving the MiniBooNE Anomaly</h4>
+                        <p>The long-standing MiniBooNE excess of electro-magnetic events remains unexplained. Here are some experimental and phenomenological investigations:</p>
+                        <div class="paper-links">
+                            <a href="https://inspirehep.net/literature/2025653" target="_blank" class="paper-link">
+                                <i class="fas fa-file-alt"></i> MiniBooNE and MicroBooNE Combined Fit to a 3 + 1 Sterile Neutrino Scenario
+                            </a>
+                            <a href="https://inspirehep.net/literature/1953568" target="_blank" class="paper-link">
+                                <i class="fas fa-file-alt"></i> Search for an anomalous excess of charged-current quasielastic νe interactions with the MicroBooNE experiment using Deep-Learning-based reconstruction
+                            </a>
+                            <a href="https://inspirehep.net/literature/1863140" target="_blank" class="paper-link">
+                                <i class="fas fa-file-alt"></i> Explaining the MiniBooNE Excess Through a Mixed Model of Oscillation and Decay
+                            </a>
+                            <a href="https://inspirehep.net/literature/2627825" target="_blank" class="paper-link">
+                                <i class="fas fa-file-alt"></i> Implications of MicroBooNE’s low sensitivity to electron antineutrino interactions in the search for the MiniBooNE excess
+                            </a>
+                        </div>
+                    </div>
+                    <div class="research-card">
+                        <div class="research-icon">
+                            <i class="fas fa-atom"></i>
+                        </div>
+                        <h4>Heavy Neutral Leptons</h4>
+                        <p>Searching for the well-motivated right-handed counterpoarts to our left-handed neutrinos</p>
+                        <div class="paper-links">
+                            <a href="https://inspirehep.net/literature/2861391" target="_blank" class="paper-link">
+                                <i class="fas fa-file-alt"></i> Constraints and sensitivities for dipole-portal heavy neutral leptons from ND280 and its upgrade
+                            </a>
+                            <a href="https://inspirehep.net/literature/2096334" target="_blank" class="paper-link">
+                                <i class="fas fa-file-alt"></i> Dipole-coupled heavy-neutral-lepton explanations of the MiniBooNE excess including constraints from MINERvA data
+                            </a>
+                        </div>
+                    </div>
+                    <div class="research-card">
+                        <div class="research-icon">
+                            <i class="fas fa-telescope"></i>
+                        </div>
+                        <h4>Ultra-High-Energy Neutrinos</h4>
+                        <p>On IceCube and KM3NeT, I'm interested in what neutrino telescopes can tell us about the highest-energy fundamental particles we've ever observed.</p>
+                        <div class="paper-links">
+                            <a href="https://inspirehep.net/literature/2879362" target="_blank" class="paper-link">
+                                <i class="fas fa-file-alt"></i> Ultrahigh-Energy Event KM3-230213A within the Global Neutrino Landscape
+                            </a>
+                        </div>
+                    </div>
+                    <div class="research-card">
+                        <div class="research-icon">
+                            <i class="fas fa-microscope"></i>
+                        </div>
+                        <h4>Natural Neutrino Detectors</h4>
+                        <p>Can we leverage nature to explore Nature? Here are some ideas:</p>
+                        <div class="paper-links">
+                            <a href="https://inspirehep.net/literature/2960140" target="_blank" class="paper-link">
+                                <i class="fas fa-file-alt"></i> The Neutrino Kaleidoscope: Searches for Non-Standard Neutrino Oscillations at Neutrino Telescopes with a TeV Muon Accelerator Source
+                            </a>
+                            <a href="https://inspirehep.net/literature/2868896" target="_blank" class="paper-link">
+                                <i class="fas fa-file-alt"></i> Lake- and Surface-Based Detectors for Forward Neutrino Physics
+                            </a>
+                        </div>
                     </div>
                     <div class="research-card">
                         <div class="research-icon">
@@ -73,22 +131,37 @@
                         </div>
                         <h4>Machine Learning in Physics</h4>
                         <p>Developing deep learning techniques for shower energy reconstruction and event classification</p>
+                        <div class="paper-links">
+                            <a href="https://inspirehep.net/literature/1929140" target="_blank" class="paper-link">
+                                <i class="fas fa-file-alt"></i> CNNs for Shower Energy Prediction
+                            </a>
+                            <a href="https://inspirehep.net/literature/2860430" target="_blank" class="paper-link">
+                                <i class="fas fa-file-alt"></i> Deep Learning Super-Resolution
+                            </a>
+                        </div>
                     </div>
                     <div class="research-card">
                         <div class="research-icon">
-                            <i class="fas fa-telescope"></i>
+                            <i class="fas fa-code"></i>
                         </div>
-                        <h4>Neutrino Telescopes</h4>
-                        <p>Working on ultra-high-energy neutrino detection and analysis with KM3NeT collaboration</p>
-                    </div>
-                    <div class="research-card">
-                        <div class="research-icon">
-                            <i class="fas fa-microscope"></i>
+                        <h4>Open-source Software</h4>
+                        <p>Developing and maintaining scientific software tools for the neutrino physics community</p>
+                        <div class="paper-links">
+                            <a href="https://github.com/Harvard-Neutrino/SIREN" target="_blank" class="paper-link">
+                                <i class="fab fa-github"></i> SIREN on GitHub
+                            </a>
+                            <a href="https://inspirehep.net/literature/2801234" target="_blank" class="paper-link">
+                                <i class="fas fa-file-alt"></i> SIREN: Open Source Neutrino Injection Toolkit
+                            </a>
                         </div>
-                        <h4>Beyond Standard Model</h4>
-                        <p>Exploring new physics through neutrino-nucleus interactions and dark matter searches</p>
                     </div>
                 </div>
+            </div>
+
+            <div class="inspire-link">
+                <a href="https://inspirehep.net/authors/1800887?ui-citation-summary=true" target="_blank" class="btn btn-outline">
+                    <i class="fas fa-university"></i> View Full Publication List on INSPIRE
+                </a>
             </div>
 
             <!-- Education & Career -->
@@ -112,66 +185,6 @@
                     </div>
                 </div>
             </div>
-
-            <!-- Awards & Recognition -->
-            <div class="awards-section">
-                <h3>Awards & Recognition</h3>
-                <div class="awards-grid">
-                    <div class="award-item">
-                        <div class="award-icon">
-                            <i class="fas fa-trophy"></i>
-                        </div>
-                        <div class="award-content">
-                            <h4>Session 6 Best Talk</h4>
-                            <p>New Perspectives 2024</p>
-                        </div>
-                    </div>
-                    <div class="award-item">
-                        <div class="award-icon">
-                            <i class="fas fa-medal"></i>
-                        </div>
-                        <div class="award-content">
-                            <h4>NSF Graduate Research Fellow</h4>
-                            <p>2020-2023</p>
-                        </div>
-                    </div>
-                    <div class="award-item">
-                        <div class="award-icon">
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <div class="award-content">
-                            <h4>Los Alamos National Lab SPOT Award</h4>
-                            <p>Summer 2018</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Publications -->
-            <div class="publications">
-                <h3>Recent Publications</h3>
-                <div class="publication-list">
-                    <div class="publication-item">
-                        <h4>"The ultra-high-energy event KM3-230213A within the global neutrino landscape"</h4>
-                        <p class="authors">O. Adriani et al.</p>
-                        <p class="journal">arXiv:2502.08173 (Feb. 2025) - 16 Citations</p>
-                    </div>
-                    <div class="publication-item">
-                        <h4>"Lake- and Surface-Based Detectors for Forward Neutrino Physics"</h4>
-                        <p class="authors">Nicholas W. Kamp et al.</p>
-                        <p class="journal">arXiv:2501.08278 (Jan. 2025) - 2 Citations</p>
-                    </div>
-                    <div class="publication-item">
-                        <h4>"Enhancing events in neutrino telescopes through deep-learning-driven super-resolution"</h4>
-                        <p class="authors">Felix J. Yu, Nicholas Kamp, and Carlos A. Argüelles</p>
-                        <p class="journal">Phys. Rev. D 111.4 (2025)</p>
-                    </div>
-                </div>
-                <div class="inspire-link">
-                    <a href="#" class="btn btn-outline">View Full Publication List on INSPIRE</a>
-                </div>
-            </div>
-        </div>
     </section>
 
     <!-- Music Section -->
@@ -184,53 +197,21 @@
             </div>
 
             <div class="music-content">
-                <div class="music-description">
-                    <h3>Musical Journey</h3>
-                    <p>Music has been a constant companion throughout my academic and research career. Just as physics seeks to understand the fundamental patterns that govern our universe, music explores the patterns and relationships that create harmony and emotional resonance.</p>
-                    <p>The analytical thinking required for physics research often informs my approach to composition and sound design, while the creative processes in music provide fresh perspectives for tackling complex research problems.</p>
-                </div>
 
                 <div class="soundcloud-section">
-                    <h3>Listen to My Music</h3>
-                    <p>Explore my musical creations on SoundCloud, where I share original compositions and experimental pieces.</p>
+                    <h3>Check out my Recordings!</h3>
+                    <p>I post originals and covers semi-regularly on SoundCloud:.</p>
 
                     <div class="soundcloud-embed">
-                        <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay"
-                                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/684860444&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
-                        </iframe>
+                    <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay"
+                        src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/kamp-684860444&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
+                    </iframe>
                     </div>
 
                     <div class="music-links">
                         <a href="https://soundcloud.com/kamp-684860444" target="_blank" class="btn btn-primary">
                             <i class="fab fa-soundcloud"></i> Visit My SoundCloud
                         </a>
-                    </div>
-                </div>
-
-                <div class="music-physics-connection">
-                    <h3>The Physics-Music Connection</h3>
-                    <div class="connection-grid">
-                        <div class="connection-item">
-                            <div class="connection-icon">
-                                <i class="fas fa-wave-square"></i>
-                            </div>
-                            <h4>Wave Physics</h4>
-                            <p>Understanding acoustics and wave interference patterns informs both my research and musical composition</p>
-                        </div>
-                        <div class="connection-item">
-                            <div class="connection-icon">
-                                <i class="fas fa-chart-line"></i>
-                            </div>
-                            <h4>Pattern Recognition</h4>
-                            <p>The same analytical skills used in data analysis help in understanding musical structures and progressions</p>
-                        </div>
-                        <div class="connection-item">
-                            <div class="connection-icon">
-                                <i class="fas fa-brain"></i>
-                            </div>
-                            <h4>Creative Problem Solving</h4>
-                            <p>Musical improvisation and composition enhance creative thinking approaches to physics research</p>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -245,17 +226,17 @@
             <div class="contact-links">
                 <a href="mailto:nkamp@fas.harvard.edu" class="contact-link">
                     <i class="fas fa-envelope"></i>
-                    <span>nkamp@fas.harvard.edu</span>
+                    <span>nkamp {at} fas {dot} harvard {dot} edu</span>
                 </a>
                 <a href="https://soundcloud.com/kamp-684860444" target="_blank" class="contact-link">
                     <i class="fab fa-soundcloud"></i>
                     <span>SoundCloud</span>
                 </a>
-                <a href="#" class="contact-link">
+                <a href="https://lppc.physics.harvard.edu/people/nicholas-kamp" class="contact-link">
                     <i class="fas fa-university"></i>
                     <span>Harvard Physics</span>
                 </a>
-                <a href="#" class="contact-link">
+                <a href="https://inspirehep.net/authors/1800887?ui-citation-summary=true" class="contact-link">
                     <i class="fab fa-orcid"></i>
                     <span>INSPIRE Profile</span>
                 </a>
@@ -266,8 +247,8 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 Nicholas Kamp. All rights reserved.</p>
-            <p>Postdoctoral Fellow in Physics, Harvard University | Musician & Creative Explorer</p>
+            <p>&copy; 2024 Nick Kamp. All rights reserved.</p>
+            <p>Postdoctoral Fellow in Physics, Harvard University | Musician </p>
         </div>
     </footer>
 

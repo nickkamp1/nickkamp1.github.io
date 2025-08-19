@@ -84,9 +84,37 @@ body {
     text-align: center;
 }
 
-.hero-content h1 {
-    font-size: 3.5rem;
-    margin-bottom: 1rem;
+/* Hero Section with headshot */
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-image {
+    margin-bottom: 2rem;
+}
+
+.headshot {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.headshot:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .headshot {
+        width: 150px;
+        height: 150px;
+    }
 }
 
 .highlight {
@@ -228,10 +256,23 @@ body {
     text-align: center;
 }
 
+/* Updated research grid to handle 5 cards */
 .research-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
     gap: 2rem;
+}
+@media (min-width: 1000px) {
+    .research-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .research-card:nth-child(1) { grid-column: 1; grid-row: 1; }
+    .research-card:nth-child(2) { grid-column: 2; grid-row: 1; }
+    .research-card:nth-child(3) { grid-column: 1; grid-row: 2; }
+    .research-card:nth-child(4) { grid-column: 2; grid-row: 2; }
+    .research-card:nth-child(5) { grid-column: 1; grid-row: 3; }
+    .research-card:nth-child(6) { grid-column: 2; grid-row: 3; }
 }
 
 .research-card {
@@ -599,5 +640,135 @@ body {
 
     .music-intro {
         font-size: 1rem;
+    }
+}
+
+/* Publication Links */
+.publication-item {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.publication-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.publication-item h4 {
+    color: #2c3e50;
+    margin-bottom: 0.8rem;
+    line-height: 1.4;
+    font-size: 1.1rem;
+}
+
+.authors {
+    color: #666;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.journal {
+    color: #888;
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+}
+
+.citations {
+    color: #3498db;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.publication-links {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.pub-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    text-decoration: none;
+    color: #3498db;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 5px 12px;
+    border: 1px solid #3498db;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.pub-link:hover {
+    background-color: #3498db;
+    color: white;
+    transform: translateY(-1px);
+}
+
+.pub-link i {
+    font-size: 0.8rem;
+}
+
+/* Responsive adjustments for publications */
+@media (max-width: 768px) {
+    .publication-links {
+        justify-content: center;
+    }
+
+    .pub-link {
+        font-size: 0.8rem;
+        padding: 4px 10px;
+    }
+}
+
+/* Paper Links in Research Cards */
+.paper-links {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.paper-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: #3498db;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 8px 12px;
+    border: 1px solid #3498db;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    background: rgba(52, 152, 219, 0.05);
+}
+
+.paper-link:hover {
+    background-color: #3498db;
+    color: white;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(52, 152, 219, 0.3);
+}
+
+.paper-link i {
+    font-size: 0.8rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .paper-links {
+        margin-top: 1rem;
+        gap: 0.6rem;
+    }
+
+    .paper-link {
+        font-size: 0.85rem;
+        padding: 6px 10px;
     }
 }
