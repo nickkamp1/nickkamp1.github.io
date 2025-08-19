@@ -73,26 +73,70 @@ body {
     transition: 0.3s;
 }
 
-/* Hero Section */
+/* Hero Section with Custom Background */
 .hero {
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url('Images/Background.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+/* Alternative without overlay (if your image is dark enough) */
+.hero-no-overlay {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('Images/Background.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     color: white;
     text-align: center;
 }
 
-/* Hero Section with headshot */
-.hero-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/* Ensure text is readable with a subtle text shadow */
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-.hero-image {
+.hero-description {
+    font-size: 1.2rem;
     margin-bottom: 2rem;
+    opacity: 0.95;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+/* Optional: Add a subtle animated overlay */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg,
+        rgba(52, 152, 219, 0.1) 0%,
+        rgba(118, 75, 162, 0.1) 100%);
+    pointer-events: none;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
 }
 
 .headshot {
