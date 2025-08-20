@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nick Kamp - Physicist & Musician</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
@@ -47,7 +47,7 @@
     <!-- Physics Section -->
     <section id="physics" class="physics">
         <div class="container">
-            <h2 class="section-title">Physics Research</h2>
+            <h2 class="section-title">Physics</h2>
 
             <!-- Current Position -->
             <div class="position-card current">
@@ -58,19 +58,22 @@
                 <h4>Postdoctoral Fellow in Physics</h4>
                 <p class="institution">Harvard University, Cambridge, MA</p>
                 <p class="advisor">Advisor: Prof. Carlos Argüelles-Delgado</p>
-                <p class="description">Conducting cutting-edge research in neutrino physics, focusing on high-energy neutrino interactions and beyond-standard-model physics.</p>
+                <p class="description">Exploring high-energy neutrino interactions and beyond-standard-model physics. Member of the IceCube and KM3NeT collaborations.</p>
             </div>
 
             <!-- Research Areas -->
             <div class="research-areas">
-                <h3>Research Focus</h3>
+                <h3>Research Areas</h3>
                 <div class="research-grid">
                     <div class="research-card">
-                        <div class="research-icon">
-                            <i class="fas fa-atom"></i>
+                        <div class="research-header">
+                            <div class="research-icon">
+                                <i class="fas fa-chart-simple"></i>
+                            </div>
+                            <h4>The MiniBooNE Anomaly</h4>
                         </div>
-                        <h4>The MiniBooNE Anomaly</h4>
                         <p>Investigating, experimentally and phenomenologically, the long-standing MiniBooNE excess of electro-magnetic events</p>
+                        <img src="Images/FinalConstrainedPlotWithRatio.png" alt="MiniBooNE" class="research-img">
                         <div class="paper-links">
                             <a href="https://inspirehep.net/literature/1953568" target="_blank" class="paper-link">
                                 <i class="fas fa-file-alt"></i> Search for an anomalous excess of charged-current quasielastic νe interactions with the MicroBooNE experiment using Deep-Learning-based reconstruction
@@ -87,11 +90,14 @@
                         </div>
                     </div>
                     <div class="research-card">
-                        <div class="research-icon">
-                            <i class="fas fa-atom"></i>
+                        <div class="research-header">
+                            <div class="research-icon">
+                                <i class="fas fa-atom"></i>
+                            </div>
+                            <h4>Heavy Neutral Leptons</h4>
                         </div>
-                        <h4>Heavy Neutral Leptons</h4>
-                        <p>Searching for the well-motivated right-handed counterpoarts to our left-handed neutrinos</p>
+                        <p>Searching for the right-handed counterparts to our left-handed neutrinos</p>
+                        <img src="Images/GlobalConstraints_ADDROW.png" alt="Dipole_ND280" class="research-img">
                         <div class="paper-links">
                             <a href="https://inspirehep.net/literature/2861391" target="_blank" class="paper-link">
                                 <i class="fas fa-file-alt"></i> Constraints and sensitivities for dipole-portal heavy neutral leptons from ND280 and its upgrade
@@ -102,23 +108,32 @@
                         </div>
                     </div>
                     <div class="research-card">
-                        <div class="research-icon">
-                            <i class="fas fa-telescope"></i>
+                        <div class="research-header">
+                            <div class="research-icon">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <h4>Ultra-High-Energy Neutrinos</h4>
                         </div>
-                        <h4>Ultra-High-Energy Neutrinos</h4>
-                        <p>On IceCube and KM3NeT, understanding what neutrino telescopes can tell us about the highest-energy fundamental particles we've ever observed.</p>
+                        <p>On IceCube and KM3NeT, understanding what neutrino telescopes can tell us about the highest-energy fundamental particles</p>
+                        <img src="Images/VHE_compatibility.png" alt="VHE" class="research-img">
                         <div class="paper-links">
                             <a href="https://inspirehep.net/literature/2879362" target="_blank" class="paper-link">
                                 <i class="fas fa-file-alt"></i> Ultrahigh-Energy Event KM3-230213A within the Global Neutrino Landscape
                             </a>
+                            <a href="https://inspirehep.net/literature/2879193" target="_blank" class="paper-link">
+                                <i class="fas fa-file-alt"></i> Observation of an ultra-high-energy cosmic neutrino with KM3NeT
+                            </a>
                         </div>
                     </div>
                     <div class="research-card">
-                        <div class="research-icon">
-                            <i class="fas fa-microscope"></i>
+                        <div class="research-header">
+                            <div class="research-icon">
+                                <i class="fas fa-mountain"></i>
+                            </div>
+                            <h4>Natural Neutrino Detectors</h4>
                         </div>
-                        <h4>Natural Neutrino Detectors</h4>
-                        <p>Exploring the question: can we leverage nature to explore Nature?</p>
+                        <p>Exploring the question: can we leverage nature to explore Nature? (Illustration by J. Pairin)</p>
+                        <img src="Images/Globe-Telescopes_Diagram_Final_fixed.png" alt="Kaleidoscope" class="research-img">
                         <div class="paper-links">
                             <a href="https://inspirehep.net/literature/2960140" target="_blank" class="paper-link">
                                 <i class="fas fa-file-alt"></i> The Neutrino Kaleidoscope: Searches for Non-Standard Neutrino Oscillations at Neutrino Telescopes with a TeV Muon Accelerator Source
@@ -129,11 +144,14 @@
                         </div>
                     </div>
                     <div class="research-card">
-                        <div class="research-icon">
-                            <i class="fas fa-brain"></i>
+                        <div class="research-header">
+                            <div class="research-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <h4>Machine Learning in Physics</h4>
                         </div>
-                        <h4>Machine Learning in Physics</h4>
-                        <p>Mentoring students through the development of ML tools for neutrino physics</p>
+                        <p>Mentoring students through the development of ML tools for neutrino physics (Diagram by F. Yu)</p>
+                        <img src="Images/arch.png" alt="ML" class="research-img">
                         <div class="paper-links">
                             <a href="https://inspirehep.net/literature/2840875" target="_blank" class="paper-link">
                                 <i class="fas fa-file-alt"></i> Learning Efficient Representations of Neutrino Telescope Events
@@ -147,11 +165,14 @@
                         </div>
                     </div>
                     <div class="research-card">
-                        <div class="research-icon">
-                            <i class="fas fa-code"></i>
+                        <div class="research-header">
+                            <div class="research-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h4>Open-Source Software</h4>
                         </div>
-                        <h4>Open-source Software</h4>
-                        <p>Writing and maintaining scientific software tools for the neutrino physics community</p>
+                        <p>Writing and maintaining scientific software tools for the neutrino physics community (Illustration by J. Pairin)</p>
+                        <img src="Images/figure_Event-Generation-Diagram_Draft-4-page1.png" alt="SIREN" class="research-img">
                         <div class="paper-links">
                             <a href="https://github.com/Harvard-Neutrino/SIREN" target="_blank" class="paper-link">
                                 <i class="fab fa-github"></i> SIREN on GitHub

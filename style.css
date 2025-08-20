@@ -341,14 +341,70 @@ body {
     color: #3498db;
 }
 
-.research-card h4 {
+/* .research-card h4 {
     margin-bottom: 1rem;
     color: #2c3e50;
-}
+} */
 
 .research-card p {
     color: #666;
     line-height: 1.6;
+}
+
+.research-img {
+    display: block;
+    width: 100%;    /* fill card width */
+    height: auto;   /* preserve aspect ratio (no crop) */
+    object-fit: contain; /* safe fallback */
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Make sure cards don't impose a fixed image height */
+.research-card {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+/* research header: icon left of title */
+.research-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.research-icon {
+    font-size: 1.25rem;   /* adjust icon size */
+    color: var(--accent, #2b6cb0); /* optional accent color */
+    flex: 0 0 auto;
+}
+
+/* ensure title and icon align even when image appears above */
+.research-card h4 {
+    margin: 0;
+    font-size: 1.6rem;
+}
+
+/* keep rest of card layout unchanged */
+.research-card {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+/* make icon/title vertically centered */
+.research-header .research-icon {
+    margin-bottom: 0px;
+    display: flex;
+    align-items: center;
+}
+
+.research-header h4 {
+    margin: 0;
+    line-height: 1.25;
 }
 
 /* Timeline */
